@@ -11,9 +11,10 @@ function Bookingdetails() {
           setData(res.data);
         });
       }, [])};
+      
   return (
     <>
-      <Navbar />
+     <Navbar />
       {data.length==0?<Loader/>:
       <div className="container">
         <table class="table table-stdiped">

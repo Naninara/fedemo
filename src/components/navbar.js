@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 function navibar() {
+  const clearSession = () =>{
+    sessionStorage.clear();
+  }
   return (
     <>
       <div className="navi">
@@ -28,7 +31,7 @@ function navibar() {
           >
             Booking history
           </Link>
-          <Link to="/">
+          <Link to="/" onClick={clearSession}>
             Logout
           </Link>
           

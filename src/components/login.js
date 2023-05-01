@@ -33,6 +33,7 @@ function Login() {
         setErrorMessages({ name: "pass", message: errors.pass });
       } else {
         // success
+        sessionStorage.setItem("name",userData.type);
         setIsSubmitted(true);
         setLoginType(userData.type);
       }
@@ -91,9 +92,9 @@ function Login() {
 
   return (
     <>
-      {isSubmitted && loginType=="user"? (
+      {sessionStorage.getItem("name")=="user"? (
         <div>
-          {window.location.href="/fedemo/dashboard"}
+          {<Dashboard/>}
         </div>
       ) : (
         <div className="app">{renderForm}</div>

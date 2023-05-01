@@ -68,7 +68,7 @@ function Login() {
             />
              {renderErrorMessage("pass")}
             <div class="forgot">
-            <Link rel="noopener noreferrer" to="/forgotpassword">
+            <Link  to="/forgotpassword">
                 Forgot Password ?
               </Link>
             </div>
@@ -93,7 +93,7 @@ function Login() {
     <>
       {isSubmitted && loginType=="user"? (
         <div>
-          {window.location.href="/dashboard"}
+          {window.location.href="/fedemo/dashboard"}
         </div>
       ) : (
         <div className="app">{renderForm}</div>

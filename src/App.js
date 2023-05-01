@@ -16,13 +16,13 @@ function App() {
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path="/" element={<Login />}></Route>
-          <Route path="/dashboard" element={<Dashboard />}></Route>
-          <Route path="/cardetails" element={<Cardetails />}></Route>
-          <Route path="/payment" element={<Payment />}></Route>
-          <Route path="/viewhistory" element={<Viewstatus />}></Route>
-          <Route path="/usersignup" element={<Usersignup />}></Route>
-          <Route path="/bookinghistory" element={<Bookingdetails />}></Route>
+          <Route exact path="/" element={<Login />}></Route>
+          <Route exact path="/dashboard" element={<Dashboard />}></Route>
+          <Route exact path="/cardetails" element={<Cardetails />}></Route>
+          <Route exact path="/payment" element={<Payment />}></Route>
+          <Route exact path="/viewhistory" element={<Viewstatus />}></Route>
+          <Route exact path="/usersignup" element={<Usersignup />}></Route>
+          <Route exact path="/bookinghistory" element={<Bookingdetails />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,7 +1,7 @@
 {
   "name": "carrental",
   "version": "0.1.0",
-  "homepage": "http://Naninara.github.io/frontenddeploydemo",
+  "homepage": "http://Naninara.github.io/fedemo",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
